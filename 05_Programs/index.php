@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>One Page Wonder - Start Bootstrap Template</title>
+    <title>Crunchy</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,9 @@
     <!-- Custom styles for this template -->
     <link href="css/one-page-wonder.min.css" rel="stylesheet">
 
+    <link href="CustomCss/myCss.css" rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
 
   <body>
@@ -27,15 +30,18 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Mom spaghetti</a>
+        <a class="navbar-brand" href="#">Crunchy</a>
+        <div class="searchBox">
+          <input class="searchTxt" type="text" name="search" value="search" placeholder="Search">
+          <a class="searchButton" href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.php">Accueil</a>
-            </li>
+          <ul class="navbar-nav ml-auto"> 
             <li class="nav-item">
               <a class="nav-link" href="#">Ajouter une recette</a>
             </li>
@@ -96,9 +102,9 @@
     ?>
 
     <!-- Footer -->
-    <footer class="py-5 bg-black">
+    <footer class="py-5 bg-red">
       <div class="container">
-        <p class="m-0 text-center text-white small">Copyright &copy; Mom Spaghetti 2018</p>
+        <p class="m-0 text-center text-white small">Copyright &copy; Crunchy 2018</p>
       </div>
       <!-- /.container -->
     </footer>

@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Mom Spaghetti</title>
+    <title>Crunchy</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,14 +16,15 @@
     <!-- Custom styles for this template -->
     <link href="css/1-col-portfolio.css" rel="stylesheet">
 
+    <link href="CustomCss/myCss.css" rel="stylesheet">
   </head>
 
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-red fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="../index.php">Mom Spaghetti</a>
+        <a class="navbar-brand" href="../index.php">Crunchy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -71,13 +72,12 @@
           echo '<div class="col-md-5">';
             echo '<h3>Project One</h3>';
             echo '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>';
-            echo '<a class="btn btn-primary" href="SpecialDish/index.php">View Project</a>';
+            echo '<button class="btnPerso"><span>Voir recette</span></button>';
           echo '</div>';
         echo '</div>';
         echo '<hr>';
       }
       ?>
-      <a class="btn btn-primary" onclick="myMove">Click !</a>
 
       <!-- Pagination -->
       <ul class="pagination justify-content-center">
@@ -108,9 +108,9 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5 bg-red">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Crunchy 2018</p>
       </div>
       <!-- /.container -->
     </footer>
