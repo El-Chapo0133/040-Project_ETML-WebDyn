@@ -1,0 +1,18 @@
+.ingredients{
+	float:left;
+	margin-right: 9px;
+}
+
+.following {
+    float: left;
+    width:55%;
+    margin-top: 20px;
+}
+
+.comment {
+	width : 100%;
+}
+
+.bg-red {
+	background-color: #DF141E;
+}

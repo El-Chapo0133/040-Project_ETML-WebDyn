@@ -33,6 +33,13 @@
             <li class="nav-item">
               <a class="nav-link" href="../index.php">Accueil</a>
             </li>
+            <!-- <balisephp>
+              if ($_SESSION["IsAdmin"] == true) {
+                <li class="nav-item">
+                <a class="nav-link" href="#">Ajouter une recette</a>
+                </li>
+              }
+            -->
             <li class="nav-item">
               <a class="nav-link" href="#">Ajouter une recette</a>
             </li>
@@ -70,7 +77,7 @@
             echo '</a>';
           echo '</div>';
           echo '<div class="col-md-5">';
-            echo '<h3>Project One</h3>';
+            echo '<h3>Project</h3>';
             echo '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>';
             echo '<button class="btnPerso"><span>Voir recette</span></button>';
           echo '</div>';

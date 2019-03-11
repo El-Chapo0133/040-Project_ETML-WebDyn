@@ -20,8 +20,13 @@
     <!-- Custom styles for this template -->
     <link href="css/one-page-wonder.min.css" rel="stylesheet">
 
-    <link href="CustomCss/myCss.css" rel="stylesheet">
+    <link href="CustomCss/mainCss.css" rel="stylesheet">
+    <link href="CustomCss/logInCss.css" rel="stylesheet">
 
+    <!-- Fonts Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <?php session_start() ?>
   </head>
 
   <body>
@@ -30,14 +35,17 @@
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Crunchy</a>
+        <div class="searchBox">
+          <input class="searchTxt" type="text" name="search" value="search" placeholder="Search">
+          <a class="searchButton" href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.php">Accueil</a>
-            </li>
+          <ul class="navbar-nav ml-auto"> 
             <li class="nav-item">
               <a class="nav-link" href="#">Ajouter une recette</a>
             </li>
@@ -97,6 +105,26 @@
       }
     ?>
 
+
+    <!-- LogIn Fixed -->
+    <!-- php if SESSION["IsLoged"] == TRUE -->
+    <div class="display-logIn-container">
+        <i class="fas fa-angle-double-left rotate-left"></i>
+    </div>
+    <!--  -->
+    <div class="logIn-container-before">
+        <div class="text-LogIn">
+            <p>Log In</p>
+        </div>
+        <div class="form-LogIn">
+            <form action="index.php" method="post">
+                <input type="text" placeholder="Login"><br>
+                <input type="password" placeholder="password"><br>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="py-5 bg-red">
       <div class="container">
@@ -108,5 +136,15 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        var toggleClassLogIn = function() {
+                $('.logIn-container-before').toggleClass('logIn-container-after');
+                $('.rotate-left').toggleClass('rotate-right');
+            };
+
+        $('.display-logIn-container').click(function() {
+            toggleClassLogIn();
+        });
+    </script>
   </body>
 </html>
