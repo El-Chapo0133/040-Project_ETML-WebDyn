@@ -19,6 +19,10 @@
 
     <!--CustomCss in other files-->
     <link href="CustomCss/myCss.css" rel="stylesheet">
+    <link href="../../00_resources/00_css/99_Universal/logIn.css" rel="stylesheet">
+
+    <!-- Fonts Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
   </head>
 
@@ -117,7 +121,7 @@
                <!-- Post Content -->
                <p class="lead">La recette</p>
 
-               <p>Faire chauffer de l’huile dans une poêle en fonte. 
+               <p>Faire chauffer de l’huile dans une poêle en fonte.
                </p>
 
                <p>Dans un bol,  mélanger 240 grammes de farine, le sel, le poivre noir, le basilic, l'origan, le céleri, la moutarde en poudre, le paprika, le sel à l’ail, le gingembre moulu et le poivre blanc. </p>
@@ -161,6 +165,25 @@
     </div>
     <!-- /.container -->
 
+    <!-- LogIn Fixed -->
+    <!-- php if SESSION["IsLoged"] == TRUE -->
+    <div class="display-logIn-container">
+        <i class="fas fa-angle-double-left rotate-left"></i>
+    </div>
+    <!--  -->
+    <div class="logIn-container-before">
+        <div class="text-logIn">
+            <p>Log In</p>
+        </div>
+        <div class="form-logIn">
+            <form action="index.php" method="post">
+                <input type="text" placeholder="Login"><br>
+                <input type="password" placeholder="password"><br>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="py-5 bg-red">
       <div class="container">
@@ -172,6 +195,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../../00/resources/03_js/99_Universal/logIn_Event.js"></script>
 
   </body>
 

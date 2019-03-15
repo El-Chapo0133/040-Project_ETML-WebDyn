@@ -17,6 +17,11 @@
     <link href="css/1-col-portfolio.css" rel="stylesheet">
 
     <link href="../../00_resources/00_css/01_dishes/dishesCss.css" rel="stylesheet">
+    <link href="../../00_resources/00_css/99_Universal/logIn.css" rel="stylesheet">
+
+    <!-- Fonts Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
   </head>
 
   <body>
@@ -65,11 +70,11 @@
         <small>par ordre alphabétique</small>
       </h1>
 
-      <?php  
+      <?php
 
        $arrayName = array('poulet','salades');
 
-      for ($i=0; $i < count($arrayName); $i++) { 
+      for ($i=0; $i < count($arrayName); $i++) {
           echo '<div class="row">';
           echo '<div class="col-md-7">';
             echo '<a href="#">';
@@ -85,6 +90,25 @@
         echo '<hr>';
       }
       ?>
+
+      <!-- LogIn Fixed -->
+      <!-- php if SESSION["IsLoged"] == TRUE -->
+      <div class="display-logIn-container">
+          <i class="fas fa-angle-double-left rotate-left"></i>
+      </div>
+      <!--  -->
+      <div class="logIn-container-before">
+          <div class="text-logIn">
+              <p>Log In</p>
+          </div>
+          <div class="form-logIn">
+              <form action="index.php" method="post">
+                  <input type="text" placeholder="Login"><br>
+                  <input type="password" placeholder="password"><br>
+                  <button type="submit">Log In</button>
+              </form>
+          </div>
+      </div>
 
       <!-- Pagination -->
       <ul class="pagination justify-content-center">
@@ -125,9 +149,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="JS1.js">
-      
-    </script>
+    <script type="text/javascript" src="../../00_resources/03_js/99_Universal/logIn_Event.js"></script>
 
   </body>
 

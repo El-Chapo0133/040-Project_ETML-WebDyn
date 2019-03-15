@@ -14,7 +14,7 @@
 	height: 150px;
 	overflow: hidden;
 	float: right;
-	top: 70%;
+	top: 66%;
 	right: -60%!important; /* move to 0% to show */
 	position: fixed;
 	transition: .5s;
@@ -27,7 +27,7 @@
 	height: 150px;
 	overflow: hidden;
 	float: right;
-	top: 70%;
+	top: 66%;
 	right: 3%!important; /* move to 0% to show */
 	position: fixed;
 	transition: .5s;
@@ -84,7 +84,7 @@
 	float: right;
 	background: var(--redColor);
 	border-radius: 10px;
-	top: 77%;
+	top: 78%;
 	right: 1%;
 	padding: 5px;
 }

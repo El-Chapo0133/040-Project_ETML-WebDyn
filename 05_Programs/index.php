@@ -21,7 +21,7 @@
     <link href="98_css/one-page-wonder.min.css" rel="stylesheet">
 
     <link href="00_resources/00_css/00_mainPage/mainCss.css" rel="stylesheet">
-    <link href="00_resources/00_css/00_mainPage/logInCss.css" rel="stylesheet">
+    <link href="00_resources/00_css/99_Universal/logIn.css" rel="stylesheet">
 
     <!-- Fonts Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -136,15 +136,6 @@
     <!-- Bootstrap core JavaScript -->
     <script src="99_vendor/jquery/jquery.min.js"></script>
     <script src="99_vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-        var toggleClassLogIn = function() {
-                $('.logIn-container-before').toggleClass('logIn-container-after');
-                $('.rotate-left').toggleClass('rotate-right');
-            };
-
-        $('.display-logIn-container').click(function() {
-            toggleClassLogIn();
-        });
-    </script>
+    <script type="text/javascript" src="00_resources/03_js/99_Universal/logIn_Event.js"></script>
   </body>
 </html>
