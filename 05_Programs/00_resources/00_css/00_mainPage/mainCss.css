@@ -1,39 +1,42 @@
-body {
-	margin: 0;
-	padding : 0;
-	background: #e84118;
+.bg-red {
+	background-color: #DF141E;
 }
 .searchBox {
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 350px;
 	transform: translate(-50%, -50%);
 	background: #2f3540;
 	height: 40px;
 	border-radius: 40px;
-	padding: 10px;
+	padding: 0;
+}
+.searchBox:hover {
+	padding-left: 10px;
 }
 .searchBox:hover > .searchTxt {
-	width: 240px;
+	width: 210px; !Do not exceed 210px
 	padding: 0 6px;
 
 }
 .searchBox:hover > .searchButton {
-	background: white;
+	background: #DF141E;
+	color: white;
 }
 .searchButton {
-	color: #e84118;
+	color: #DF141E;
 	float: right;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	background: #2f3640;
+	background: #2f3540;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	transition: 0.4s;
+	transition: 0.8s;
 }
 .searchTxt {
+	margin-top: 10px;
 	border: none;
 	background: none;
 	outline: none;
@@ -42,6 +45,6 @@ body {
 	color : white;
 	font-size: 16px;
 	transition: 0.4s;
-	line-height: 40px;
+	line-height: 20px;
 	width: 0px;
 }

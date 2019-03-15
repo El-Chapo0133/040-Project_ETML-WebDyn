@@ -16,7 +16,7 @@
     <!-- Custom styles for this template -->
     <link href="css/1-col-portfolio.css" rel="stylesheet">
 
-    <link href="CustomCss/myCss.css" rel="stylesheet">
+    <link href="../../00_resources/00_css/01_dishes/dishesCss.css" rel="stylesheet">
   </head>
 
   <body>
@@ -31,7 +31,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="../index.php">Accueil</a>
+              <a class="nav-link" href="../../index.php">Accueil</a>
             </li>
             <!-- <balisephp>
               if ($_SESSION["IsAdmin"] == true) {
@@ -47,7 +47,7 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Inscription</a>
+              <a class="nav-link" href="../signIn/signIn.php">Inscription</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Connexion</a>

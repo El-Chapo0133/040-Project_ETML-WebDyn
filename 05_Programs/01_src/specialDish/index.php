@@ -47,7 +47,7 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Inscription</a>
+              <a class="nav-link" href="../signIn/signIn.php">Inscription</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Connexion</a>
