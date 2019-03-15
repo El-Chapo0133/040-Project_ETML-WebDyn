@@ -11,7 +11,7 @@
     <title>Crunchy</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="99_vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -34,7 +34,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.php">Crunchy</a>
+        <a class="navbar-brand" href="#">Crunchy</a>
         <div class="searchBox">
           <input class="searchTxt" type="text" name="search" value="search" placeholder="Search">
           <a class="searchButton" href="#">
@@ -45,9 +45,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto"> 
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="01_src/addDish/index.php">Ajouter une recette</a>
+              <a class="nav-link" href="#">Ajouter une recette</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -56,7 +56,7 @@
               <a class="nav-link" href="01_src/signIn/signIn.php">Inscription</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-logIn" href="#">Connexion</a>
+              <a class="nav-link" href="#">Connexion</a>
             </li>
           </ul>
         </div>
@@ -77,20 +77,20 @@
       <div class="bg-circle-4 bg-circle"></div>
     </header>
 
-    <?php 
+    <?php
       // Read Form db
       $arrayType = array('poulet','salades');
       $arrayImage = array('poulet','salades');
       $arrayDesc = array('wallah1', 'wallah2');
 
       // show the value from arrays
-      for ($i=0; $i < count($arrayType); $i++) { 
+      for ($i=0; $i < count($arrayType); $i++) {
          echo '<section>' ;
             echo '<div class="container">';
                echo ' <div class="row align-items-center">';
                   echo '<div class="col-lg-6 order-lg-2">';
                      echo '<div class="p-5">';
-                        echo '<img class="img-fluid rounded-circle" src="img/'.$arrayImage[$i].'.jpg" alt="">';
+                        echo '<img class="img-fluid rounded-circle" src="00_resources/01_images/00_mainPage/'.$arrayImage[$i].'.jpg" alt="">';
                      echo '</div>';
                   echo '</div>';
                   echo '<div class="col-lg-6 order-lg-1">';
@@ -113,10 +113,10 @@
     </div>
     <!--  -->
     <div class="logIn-container-before">
-        <div class="text-LogIn">
+        <div class="text-logIn">
             <p>Log In</p>
         </div>
-        <div class="form-LogIn">
+        <div class="form-logIn">
             <form action="index.php" method="post">
                 <input type="text" placeholder="Login"><br>
                 <input type="password" placeholder="password"><br>
@@ -134,8 +134,8 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="99_vendor/jquery/jquery.min.js"></script>
+    <script src="99_vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
         var toggleClassLogIn = function() {
                 $('.logIn-container-before').toggleClass('logIn-container-after');
@@ -144,9 +144,6 @@
 
         $('.display-logIn-container').click(function() {
             toggleClassLogIn();
-        });
-        $('.nav-logIn').click(function() {
-           toggleClassLogIn();
         });
     </script>
   </body>

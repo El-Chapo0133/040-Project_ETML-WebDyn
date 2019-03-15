@@ -1,6 +1,7 @@
-:root {
+ 	:root {
 	--redColor: #df141e;
-	--darkColor: #343a40;
+	--darkColor-light: #343a40;
+  --darkColor-heavy: #262626;
 	--whiteColor: #fff;
 	--transparentColor: transparent;
 }
@@ -30,8 +31,9 @@
 	right: 3%!important; /* move to 0% to show */
 	position: fixed;
 	transition: .5s;
+	background: none;
 }
-.text-LogIn {
+.text-logIn {
 	width: 100px;
 	height: 50px;
 	justify-content: center;
@@ -39,22 +41,24 @@
 	transition: .5s;
 	font-size: 30px;
 }
-.form-LogIn {
+.form-logIn {
 	width: 180px;
 	height: 130px;
 	margin: 10px 10px;
 	transition: .5s;
 	transform: translate(0, 150px);
 }
-.logIn-container-after input {
+.form-logIn input {
 	box-shadow: none;
 	text-shadow: none;
 	outline: none;
 	border: none;
-	border-bottom: 1px solid var(--darkColor);
+	border-bottom: 1px solid var(--darkColor-light);
 	margin-top: 3px;
 	margin-bottom: 6px;
-	color: var(--darkColor);
+	color: var(--darkColor-heavy);
+	background: none;
+  font-size: 20px;
 }
 .logIn-container-after button {
 	display: block;
@@ -64,11 +68,11 @@
 	margin-top: 8px;
 	outline: none;
 	background: none;
-	border: 2px solid var(--darkColor);
+	border: 2px solid var(--darkColor-light);
 	border-radius: 6px;
 	transition: .1s;
 	padding: 0;
-	color: var(--darkColor);
+	color: var(--darkColor-light);
 }
 
 
@@ -104,10 +108,10 @@
 }
 
 
-.logIn-container-after:hover > .text-LogIn {
-	transform: translate(0, -150px);
+.logIn-container-after:hover > .text-logIn {
+	transform: translate(0, -135px);
 }
-.logIn-container-after:hover > .form-LogIn {
+.logIn-container-after:hover > .form-logIn {
 	transform: translate(0, -135px);
 }
 .logIn-container-after button:hover {
@@ -115,6 +119,6 @@
 	height: 36px;
 	margin-top: 4px;
 	margin-left: 76px;
-	border: 2px solid var(--darkColor);
+	border: 2px solid var(--darkColor-heavy);
 	border-radius: 10px;
 }
