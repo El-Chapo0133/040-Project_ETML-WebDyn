@@ -34,7 +34,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Crunchy</a>
+        <a class="navbar-brand" href="index.php">Crunchy</a>
         <div class="searchBox">
           <input class="searchTxt" type="text" name="search" value="search" placeholder="Search">
           <a class="searchButton" href="#">
@@ -47,7 +47,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto"> 
             <li class="nav-item">
-              <a class="nav-link" href="#">Ajouter une recette</a>
+              <a class="nav-link" href="01_src/addDish/index.php">Ajouter une recette</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -56,7 +56,7 @@
               <a class="nav-link" href="01_src/signIn/signIn.php">Inscription</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Connexion</a>
+              <a class="nav-link nav-logIn" href="#">Connexion</a>
             </li>
           </ul>
         </div>
@@ -144,6 +144,9 @@
 
         $('.display-logIn-container').click(function() {
             toggleClassLogIn();
+        });
+        $('.nav-logIn').click(function() {
+           toggleClassLogIn();
         });
     </script>
   </body>

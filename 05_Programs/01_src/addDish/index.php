@@ -40,7 +40,7 @@
             <li class="nav-item">
               <a class="nav-link" href="..\..\index.php">Accueil</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="..\addDish\index.php">Ajouter une recette</a>
             </li>
             <li class="nav-item">
@@ -71,18 +71,30 @@
         <div class="col-lg-8">
 
           <!-- Title -->
-          <h1 class="mt-4">Poulet Style KFC</h1>
+                <h1 class="mt-4">Ajoutez votre recette!</h1>
 
+            <!-- Start of form -->
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+
+                <div class="form-row">
+
+                    <label for="inputRecepyName">Nom de votre recette :</label>
+                    <input type="text" class="form-control" id="inputRecepyName" placeholder="Nom de recette" name="userRecepyName">
+
+
+
+                </div>
+                <br>
           <!-- Author -->
           <p class="lead">
-            by
+            par
             <a href="#">Username</a>
           </p>
 
           <hr>
 
           <!-- Date/Time -->
-          <p>Posted on January 1, 2018 at 12:00 PM</p>
+          <p>La date de l'ajout de la recette sera affiché ici</p>
 
           <hr>
 

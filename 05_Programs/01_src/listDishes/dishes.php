@@ -24,7 +24,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-red fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="../index.php">Crunchy</a>
+        <a class="navbar-brand" href="../../index.php">Crunchy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,7 +41,7 @@
               }
             -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Ajouter une recette</a>
+              <a class="nav-link" href="..\addDish\index.php">Ajouter une recette</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -79,7 +79,8 @@
           echo '<div class="col-md-5">';
             echo '<h3>Project</h3>';
             echo '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>';
-            echo '<button class="btnPerso"><span>Voir recette</span></button>';
+            /* the link page needs to be a variable from an array :) */
+            echo '<button onclick="window.location.href=\'../specialDish/index.php\'" class="btnPerso"><span>Voir recette</span></button>';
           echo '</div>';
         echo '</div>';
         echo '<hr>';
