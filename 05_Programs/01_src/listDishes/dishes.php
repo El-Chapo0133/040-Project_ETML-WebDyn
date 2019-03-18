@@ -18,6 +18,7 @@
     <link href="../../00_resources/00_css/01_dishes/dishesCss.css" rel="stylesheet">
     <link href="../../00_resources/00_css/99_Universal/logIn.css" rel="stylesheet">
     <link href="../../00_resources/00_css/99_Universal/searchBox.css" rel="stylesheet">
+    <link href="../../00_resources/00_css/01_dishes/searchBox.css" rel="stylesheet">
 
     <!-- Fonts Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>

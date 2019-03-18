@@ -21,6 +21,7 @@
     <link href="CustomCss/myCss.css" rel="stylesheet">
     <link href="../../00_resources/00_css/99_Universal/logIn.css" rel="stylesheet">
     <link href="../../00_resources/00_css/99_Universal/searchBox.css" rel="stylesheet">
+    <link href="../../00_resources/00_css/02_specialDish/searchBox.css" rel="stylesheet">
 
     <!-- Fonts Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
