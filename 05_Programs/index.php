@@ -20,7 +20,7 @@
     <!-- Custom styles for this template -->
     <link href="98_css/one-page-wonder.min.css" rel="stylesheet">
 
-    <link href="00_resources/00_css/00_mainPage/mainCss.css" rel="stylesheet">
+    <link href="00_resources/00_css/99_Universal/searchBox.css" rel="stylesheet">
     <link href="00_resources/00_css/99_Universal/logIn.css" rel="stylesheet">
 
     <!-- Fonts Awesome -->
@@ -35,12 +35,6 @@
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Crunchy</a>
-        <div class="searchBox">
-          <input class="searchTxt" type="text" name="search" value="search" placeholder="Search">
-          <a class="searchButton" href="#">
-            <i class="fas fa-search"></i>
-          </a>
-        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -62,6 +56,13 @@
         </div>
       </div>
     </nav>
+    <!-- _===== SearchBox =====_ -->
+    <div class="searchBox">
+      <input class="searchTxt" type="text" name="earch" placeholder="Search">
+      <a class="searchButton bg-red" href="#">
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
 
     <header class="masthead text-center text-white">
       <div class="masthead-content">
@@ -137,5 +138,18 @@
     <script src="99_vendor/jquery/jquery.min.js"></script>
     <script src="99_vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="00_resources/03_js/99_Universal/logIn_Event.js"></script>
+    <script type="text/javascript">
+    let root = document.Element;
+    $(function() {
+     $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          root.style.setProperty('--bg_seachButton', '#2962ff')
+        }
+        if ($(this).scrollTop() < 50) {
+           root.style.setProperty('--bg_seachButton', '#262626')
+        }
+     });
+    });
+    </script>
   </body>
 </html>
