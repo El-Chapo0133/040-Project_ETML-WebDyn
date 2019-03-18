@@ -64,7 +64,7 @@
     <!-- _===== SearchBox =====_ -->
     <div class="searchBox">
       <input class="searchTxt" type="text" name="earch" placeholder="Search">
-      <a class="searchButton bg-red" href="#">
+      <a class="searchButton" href="#">
         <i class="fas fa-search"></i>
       </a>
     </div>
