@@ -128,28 +128,16 @@
 
     <!-- Footer -->
     <footer class="py-5 bg-red">
-      <div class="container">
-        <p class="m-0 text-center text-white small">Copyright &copy; Crunchy 2018</p>
-      </div>
-      <!-- /.container -->
+        <div class="container">
+            <p class="m-0 text-center text-white small">Copyright &copy; Crunchy 2018</p>
+        </div>
+        <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="99_vendor/jquery/jquery.min.js"></script>
     <script src="99_vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="00_resources/03_js/99_Universal/logIn_Event.js"></script>
-    <script type="text/javascript">
-    let root = document.Element;
-    $(function() {
-     $(window).scroll(function () {
-        if ($(this).scrollTop() > 50) {
-          root.style.setProperty('--bg_seachButton', '#2962ff')
-        }
-        if ($(this).scrollTop() < 50) {
-           root.style.setProperty('--bg_seachButton', '#262626')
-        }
-     });
-    });
-    </script>
+    <script type="text/javascript" src="00_resources/03_js/99_Universal/searchBox_ColorChanger.js"> </script>
   </body>
 </html>
