@@ -1,11 +1,10 @@
 :root {
 	/* Change it from #df141e to #2962ff */
-	--bg_seachButton: #df141e;
+	--bg_searchButton: #df141e;
 }
 
 .searchBox {
 	position: fixed;
-	margin-top: 97px;
 	left: 29px;
 	transform: translate(-50%, -50%);
 	background: #2f3540;
@@ -33,7 +32,7 @@
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	background: var(--bg_searchButton);
+	background: #262626;
 	display: flex;
 	justify-content: center;
 	align-items: center;

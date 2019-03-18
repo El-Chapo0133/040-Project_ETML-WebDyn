@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -16,8 +14,11 @@
     <!-- Custom styles for this template -->
     <link href="css/1-col-portfolio.css" rel="stylesheet">
 
+    <!-- My customs styles -->
     <link href="../../00_resources/00_css/01_dishes/dishesCss.css" rel="stylesheet">
     <link href="../../00_resources/00_css/99_Universal/logIn.css" rel="stylesheet">
+    <link href="../../00_resources/00_css/99_Universal/searchBox.css" rel="stylesheet">
+    <link href="../../00_resources/00_css/01_dishes/searchBox.css" rel="stylesheet">
 
     <!-- Fonts Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -29,7 +30,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-red fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="../index.php">Crunchy</a>
+        <a class="navbar-brand" href="../../index.php">Crunchy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,9 +47,6 @@
               }
             -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Ajouter une recette</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item">
@@ -61,6 +59,13 @@
         </div>
       </div>
     </nav>
+    <!-- _===== SearchBox =====_ -->
+    <div class="searchBox">
+      <input class="searchTxt" type="text" name="earch" placeholder="Search">
+      <a class="searchButton" href="#">
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
 
     <!-- Page Content -->
     <div class="container">
@@ -150,6 +155,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="../../00_resources/03_js/99_Universal/logIn_Event.js"></script>
+    <script type="text/javascript" src="../../00_resources/03_js/99_Universal/searchBox_ColorChanger.js"> </script>
 
   </body>
 

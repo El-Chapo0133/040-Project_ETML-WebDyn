@@ -20,6 +20,8 @@
     <!--CustomCss in other files-->
     <link href="CustomCss/myCss.css" rel="stylesheet">
     <link href="../../00_resources/00_css/99_Universal/logIn.css" rel="stylesheet">
+    <link href="../../00_resources/00_css/99_Universal/searchBox.css" rel="stylesheet">
+    <link href="../../00_resources/00_css/02_specialDish/searchBox.css" rel="stylesheet">
 
     <!-- Fonts Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -60,6 +62,13 @@
         </div>
       </div>
     </nav>
+    <!-- _===== SearchBox =====_ -->
+    <div class="searchBox">
+      <input class="searchTxt" type="text" name="earch" placeholder="Search">
+      <a class="searchButton" href="#">
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
 
 
 
@@ -196,6 +205,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="../../00/resources/03_js/99_Universal/logIn_Event.js"></script>
+    <script type="text/javascript" src="../../00_resources/03_js/99_Universal/searchBox_ColorChanger.js"> </script>
 
   </body>
 
