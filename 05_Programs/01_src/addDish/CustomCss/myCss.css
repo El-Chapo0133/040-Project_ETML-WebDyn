@@ -1,0 +1,70 @@
+.ingredients{
+	float:left;
+	margin-right: 9px;
+}
+
+.following {
+	margin-left: 1%;
+
+    float: left;
+    width: 530px;
+	Height:20%;
+    margin-top: 20px;
+	max-height: 2909px;
+}
+
+.comment {
+	width : 100%;
+}
+
+.bg-red {
+	background-color: #DF141E;
+}
+.container-footer {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+footer {
+	width: 100%;
+	margin-top:1%
+}
+
+
+
+
+.form-recepy {
+	max-height: 316px;
+	display: block;
+	width: 100%;
+	Height: 100%;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-ingredients {
+	max-height: 240px;
+	display: block;
+	width: 100%;
+	Height: 100%;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fit-userinput{
+	width:100%;
+}
