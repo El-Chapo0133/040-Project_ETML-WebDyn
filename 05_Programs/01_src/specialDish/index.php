@@ -205,7 +205,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="../../00/resources/03_js/99_Universal/logIn_Event.js"></script>
-    <script type="text/javascript" src="00_resources/03_js/99_Universal/searchBox_ColorChanger.js"> </script>
+    <script type="text/javascript" src="../../00_resources/03_js/99_Universal/searchBox_ColorChanger.js"> </script>
 
   </body>
 
