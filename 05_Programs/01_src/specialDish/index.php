@@ -26,6 +26,9 @@
     <!-- Fonts Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
+    <!-- PHP Part -->
+    <?php session_start() ?>
+
   </head>
 
   <body>
