@@ -19,6 +19,10 @@
     <!-- Custom styles for this template -->
     <link href="css/blog-post.css" rel="stylesheet">
 
+    <!-- PHP Part -->
+    <?php session_start() ?>
+
+
 </head>
 
 <body>

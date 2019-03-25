@@ -38,6 +38,9 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 
+    <!-- PHP Part -->
+    <?php session_start() ?>
+
 </head>
 
 <body>
