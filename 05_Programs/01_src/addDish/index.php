@@ -116,13 +116,12 @@
                 <p>La date de l'ajout de la recette sera affiché ici</p>
 
                 <hr>
-
             </form>
 
-
-            <div class="col-md-4">
+            <div class="row">
+            <div class="col-md-4"style="width:30%;">
                 <!-- Side Widget -->
-                <div class="card my-4 ingredients fit-userinput">
+                <div class="card my-3  fit-userinput"style="width:100%;">
                     <h5 class="card-header">Les Ingrédients</h5>
                     <div class="card-body">
 
@@ -131,15 +130,22 @@
                     </div>
                 </div>
 
-            </div>
-            <div class="following">
-                <!-- Post Content -->
-                <p class="lead">La recette</p>
-
-
-                    <textarea class="form-recepy" rows="3"></textarea>
 
             </div>
+                <div class="col-md-4 recepy"style="width:66%;">
+                <!-- Side Widget -->
+                <div class="card my-4 fit-userinput  "style="width:100%;">
+                    <h5 class="card-header">La Recette</h5>
+                    <div class="card-body">
+
+                        <textarea class="form-ingredients" rows="3"></textarea>
+
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
 
             <!--<blockquote class="blockquote">
         <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -147,7 +153,7 @@
           <cite title="Source Title">Source Title</cite>
         </footer>
       </blockquote>-->
-            <hr>
+
             <!-- Sidebar Widgets Column -->
             </form>
             <!-- Comments Form -->
@@ -160,7 +166,7 @@
 </div>
 
 <!-- Footer -->
-<footer class="py-5 bg-red fixed-bottom">
+<footer class="py-5 bg-red">
     <div class="container-footer">
         <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
     </div>
