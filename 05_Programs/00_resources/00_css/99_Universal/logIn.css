@@ -32,6 +32,7 @@
 	position: fixed;
 	transition: .5s;
 	background: none;
+	z-index: 1001;
 }
 .text-logIn {
 	width: 100px;

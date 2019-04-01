@@ -1,7 +1,19 @@
 :root {
 	--red-full: #df141e;
+	--white: #fff;
 }
 
 .bg-red {
-	background: var(--red-full);
+	background: var(--red-full)!important;
+}
+
+.bg-red-header {
+	background: linear-gradient(to top, var(--white) 0%, var(--red-full) 60%)!important;
+}
+
+.down-bg {
+	z-index: 0;
+	width: 100%;
+	height: 150px;
+	background: linear-gradient(to top, var(--red-full) 5%, var(--white));
 }
