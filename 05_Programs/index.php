@@ -23,6 +23,7 @@
         <!-- customs styles -->
         <link href="00_resources/00_css/99_Universal/searchBox.css" rel="stylesheet">
         <link href="00_resources/00_css/99_Universal/logIn.css" rel="stylesheet">
+        <link href="00_resources/00_css/99_Universal/universal.css" rel="stylesheet">
         <link href="00_resources/00_css/00_index/searchBox.css" rel="stylesheet">
 
         <!-- Fonts Awesome -->
@@ -52,7 +53,7 @@
                         <a class="nav-link" href="01_src/signIn/signIn.php">Inscription</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Connexion</a>
+                        <a class="nav-link display-logIn-nav">Connexion</a>
                     </li>
                 </ul>
             </div>

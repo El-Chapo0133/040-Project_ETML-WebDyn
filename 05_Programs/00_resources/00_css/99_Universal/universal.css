@@ -1,0 +1,7 @@
+:root {
+	--red-full: #df141e;
+}
+
+.bg-red {
+	background: var(--red-full);
+}

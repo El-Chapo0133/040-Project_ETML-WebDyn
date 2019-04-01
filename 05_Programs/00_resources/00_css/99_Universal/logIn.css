@@ -122,3 +122,7 @@
 	border: 2px solid var(--darkColor-heavy);
 	border-radius: 10px;
 }
+
+.display-logIn-nav {
+	cursor: pointer;
+}
