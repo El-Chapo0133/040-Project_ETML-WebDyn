@@ -304,9 +304,9 @@ var Dropzone = function (_Emitter) {
         /**
          * Can be used to limit the maximum number of files that will be handled by this Dropzone
          */
-        maxFiles: null,
+        maxFiles: 1,
 
-        /**
+          /**
          * An optional object to send additional headers to the server. Eg:
          * `{ "My-Awesome-Header": "header value" }`
          */
@@ -421,12 +421,12 @@ var Dropzone = function (_Emitter) {
         /**
          * The text used before any files are dropped.
          */
-        dictDefaultMessage: "Drop files here to upload",
+        dictDefaultMessage: "Déposez ici vos images",
 
         /**
          * The text that replaces the default message text it the browser is not supported.
          */
-        dictFallbackMessage: "Your browser does not support drag'n'drop file uploads.",
+        dictFallbackMessage: "Votre navigateur ne supporte pas le drop de fichiers",
 
         /**
          * The text that will be added before the fallback form.
@@ -439,38 +439,38 @@ var Dropzone = function (_Emitter) {
          * If the filesize is too big.
          * `{{filesize}}` and `{{maxFilesize}}` will be replaced with the respective configuration values.
          */
-        dictFileTooBig: "File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.",
+        dictFileTooBig: "Le fichier est trop grand ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.",
 
         /**
          * If the file doesn't match the file type.
          */
-        dictInvalidFileType: "You can't upload files of this type.",
+        dictInvalidFileType: "Vous ne pouvez pas uploader ce type de fichiers.",
 
         /**
          * If the server response was invalid.
          * `{{statusCode}}` will be replaced with the servers status code.
          */
-        dictResponseError: "Server responded with {{statusCode}} code.",
+        dictResponseError: "Le serveur a répondu {{statusCode}} code.",
 
         /**
          * If `addRemoveLinks` is true, the text to be used for the cancel upload link.
          */
-        dictCancelUpload: "Cancel upload",
+        dictCancelUpload: "Annuler l'upload",
 
         /**
          * The text that is displayed if an upload was manually canceled
          */
-        dictUploadCanceled: "Upload canceled.",
+        dictUploadCanceled: "Upload annulé",
 
         /**
          * If `addRemoveLinks` is true, the text to be used for confirmation when cancelling upload.
          */
-        dictCancelUploadConfirmation: "Are you sure you want to cancel this upload?",
+        dictCancelUploadConfirmation: "Etes vous sur de vouloir annuler cet upload?",
 
         /**
          * If `addRemoveLinks` is true, the text to be used to remove a file.
          */
-        dictRemoveFile: "Remove file",
+        dictRemoveFile: "Enlever le fichier",
 
         /**
          * If this is not null, then the user will be prompted before removing a file.
@@ -481,7 +481,7 @@ var Dropzone = function (_Emitter) {
          * Displayed if `maxFiles` is st and exceeded.
          * The string `{{maxFiles}}` will be replaced by the configuration value.
          */
-        dictMaxFilesExceeded: "You can not upload any more files.",
+        dictMaxFilesExceeded: "Vous ne pouvez pas ajouter plus de fichiers.",
 
         /**
          * Allows you to translate the different units. Starting with `tb` for terabytes and going down to
@@ -492,10 +492,15 @@ var Dropzone = function (_Emitter) {
          * Called when dropzone initialized
          * You can add event listeners here
          */
-        init: function init() {},
+        init: function() {
+            this.on("maxfilesexceeded", function(file) {
+                this.removeAllFiles();
+                this.addFile(file);
+            });
+        },
 
 
-        /**
+          /**
          * Can be an **object** of additional parameters to transfer to the server, **or** a `Function`
          * that gets invoked with the `files`, `xhr` and, if it's a chunked upload, `chunk` arguments. In case
          * of a function, this needs to return a map.
