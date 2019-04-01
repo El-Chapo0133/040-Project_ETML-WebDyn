@@ -43,7 +43,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ajouter une recette</a>
+                        <a class="nav-link" href="01_src/addDish/index.php">Ajouter une recette</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
