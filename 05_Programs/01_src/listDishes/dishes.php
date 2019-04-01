@@ -55,7 +55,7 @@
                   <a class="nav-link" href="../signIn/signIn.php">Inscription</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Connexion</a>
+                  <a class="nav-link display-logIn-nav">Connexion</a>
                 </li>
               </ul>
             </div>

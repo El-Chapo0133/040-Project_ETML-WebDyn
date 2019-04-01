@@ -18,11 +18,14 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="98_css/one-page-wonder.min.css" rel="stylesheet">
+        <link href="98_css/one-page-wonder.css" rel="stylesheet">
 
         <!-- customs styles -->
         <link href="00_resources/00_css/99_Universal/searchBox.css" rel="stylesheet">
         <link href="00_resources/00_css/99_Universal/logIn.css" rel="stylesheet">
+        <link href="00_resources/00_css/99_Universal/universal.css" rel="stylesheet">
+        <link href="00_resources/00_css/99_Universal/contactBox.css" rel="stylesheet">
+        <link href="00_resources/00_css/00_index/index.css" rel="stylesheet">
         <link href="00_resources/00_css/00_index/searchBox.css" rel="stylesheet">
 
         <!-- Fonts Awesome -->
@@ -46,13 +49,13 @@
                         <a class="nav-link" href="#">Ajouter une recette</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link display-contact-nav">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="01_src/signIn/signIn.php">Inscription</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Connexion</a>
+                        <a class="nav-link display-logIn-nav">Connexion</a>
                     </li>
                 </ul>
             </div>
@@ -68,19 +71,21 @@
     </div>
 
     <!-- Page title / the header -->
-    <header class="masthead text-center text-white">
+    <header class="masthead text-center text-white bg-red-header">
         <div class="masthead-content">
             <div class="container">
                 <h1 class="masthead-heading mb-0">Des délicieuses recettes</h1>
                 <h2 class="masthead-subheading mb-0">Pour tous les goûts</h2>
-                <a href="01_src/listDishes/dishes.php" class="btn btn-primary btn-xl rounded-pill mt-5">Les recettes</a>
+                <a href="01_src/listDishes/dishes.php" class="button-header btn btn-primary btn-xl rounded-pill mt-5">Voir les recettes</a>
             </div>
         </div>
-        <div class="bg-circle-1 bg-circle"></div>
+        <!--<div class="bg-circle-1 bg-circle"></div>
         <div class="bg-circle-2 bg-circle"></div>
         <div class="bg-circle-3 bg-circle"></div>
-        <div class="bg-circle-4 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>-->
     </header>
+
+    <div id="contact-content" class="contactBox-before"></div>
 
     <?php
         // Read Form db
@@ -132,6 +137,10 @@
         </div>
     </div>
 
+    <div class="down-bg">
+        <!-- /Empty/ -->
+    </div>
+
     <!-- Footer -->
     <footer class="py-5 bg-red">
         <div class="container">
@@ -146,6 +155,11 @@
 
     <!-- customs javascripts -->
     <script type="text/javascript" src="00_resources/03_js/99_Universal/logIn_Event.js"></script>
-    <script type="text/javascript" src="00_resources/03_js/99_Universal/searchBox_ColorChanger.js"> </script>
+    <script type="text/javascript" src="00_resources/03_js/99_Universal/searchBox_ColorChanger.js"></script>
+    <script type="text/javascript" src="00_resources/03_js/99_Universal/contactBox.js"></script>
+    <script type="text/javascript" src="00_resources/05_ajax/ajax-contact.js"></script>
+    <script type="text/javascript">
+        GetContactContent();
+    </script>
   </body>
 </html>

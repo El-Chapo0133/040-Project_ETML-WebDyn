@@ -6,3 +6,7 @@ var toggleClassLogIn = function() {
 $('.display-logIn-container').click(function() {
     toggleClassLogIn();
 });
+
+$('.display-logIn-nav').click(function() {
+	toggleClassLogIn();
+});
