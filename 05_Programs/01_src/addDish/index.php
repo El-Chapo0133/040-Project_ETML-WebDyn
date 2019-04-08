@@ -38,9 +38,6 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 
-    <!-- PHP Part -->
-    <?php session_start() ?>
-
 </head>
 
 <body>
@@ -119,8 +116,49 @@
                 <p>La date de l'ajout de la recette sera affiché ici</p>
 
                 <hr>
+
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                <div class="wrapper">
+                    <a href="http://www.google.com"><i class="fa fa-3x fa-google-plus"></i></a>
+                    <a href="http://www.facebook.com"><i class="fa fa-3x fa-facebook-square"></i></a>
+                    <a href="http://www.twitter.com"><i class="fa fa-3x fa-twitter-square"></i></a>
+                </div>
             </form>
 
+
+                <div class="small-12 columns mt5">
+                    <h2 class="mt-4">Quelques informations:</h2>
+                    <ul class="menu expanded inline-datas">
+                        <li class="icon-man has-tip top" title="Nombre de personnes" data-tooltip aria-haspopup="true">
+                            <div class="card-body">
+
+                            <textarea class="form-people" placeholder="Nom de recette" rows="1"></textarea>
+                            </div>
+                        </li>
+                        <li id="ContentPlaceHolder_trPrepa" class="icon-prepa has-tip top" title="Temps de préparation" data-tooltip="" aria-haspopup="true">
+                            <span id="ContentPlaceHolder_LblRecetteTempsPrepa">30 min</span>
+                        </li>
+                        <li id="ContentPlaceHolder_trCuisson" class="icon-cuisson has-tip top" title="Temps de cuisson" data-tooltip="" aria-haspopup="true">
+                            <span id="ContentPlaceHolder_LblRecetteTempsCuisson">20 min</span>
+                        </li>
+                        <li id="ContentPlaceHolder_trRepos" class="icon-repos has-tip top hide-for-small" title="Temps de repos" data-tooltip="" aria-haspopup="true">
+                            <span id="ContentPlaceHolder_LblRecetteTempsRepos"></span>
+                        </li>
+                        <li class="icon-euro has-tip top" title="Coût de la recette" data-tooltip aria-haspopup="true">
+                            18,17
+                        </li>
+                        <li class="icon-level has-tip top" title="Difficulté" data-tooltip aria-haspopup="true">
+                            <span id="ContentPlaceHolder_LblRecetteDifficulte">Facile</span>
+                        </li>
+                        <li id="ContentPlaceHolder_trCalories" class="icon-notebook has-tip top" title="Calories" data-tooltip="" aria-haspopup="true">
+                            <span id="ContentPlaceHolder_lblCalories"></span>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            <hr>
             <div class="row">
             <div class="col-md-4"style="width:30%;">
                 <!-- Side Widget -->
