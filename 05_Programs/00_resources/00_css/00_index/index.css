@@ -11,3 +11,7 @@
 .button-header:hover {
 	background: var(--red-full)!important;
 }
+
+.down-bg {
+	display: block;
+}
