@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html class="no-js" lang="fr">
 
 <head>
 
@@ -33,7 +33,7 @@
 
     <div class="container">
 
-        <a class="navbar-brand" href="#">Crunchy</a>
+        <a class="navbar-brand" href="../index/index.php">Crunchy</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@
             <ul class="navbar-nav ml-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="..\..\index.php">Accueil</a>
+                    <a class="nav-link" href="..\index\index.php">Accueil</a>
                 </li>
 
                 <li class="nav-item">
