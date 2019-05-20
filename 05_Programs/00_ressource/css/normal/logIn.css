@@ -1,0 +1,132 @@
+ 	:root {
+	--redColor: #df141e;
+	--darkColor-light: #343a40;
+  --darkColor-heavy: #262626;
+	--whiteColor: #fff;
+	--transparentColor: transparent;
+}
+
+.logIn-container-before {
+	margin: 20px 50px;
+	border: 3px solid var(--redColor);
+	border-radius: 10px;
+	width: 200px;
+	height: 150px;
+	overflow: hidden;
+	float: right;
+	top: 66%;
+	right: -60%!important; /* move to 0% to show */
+	position: fixed;
+	transition: .5s;
+	z-index: 10001;
+}
+.logIn-container-after {
+	margin: 20px 50px;
+	border: 3px solid var(--redColor);
+	border-radius: 10px;
+	width: 200px;
+	height: 150px;
+	overflow: hidden;
+	float: right;
+	top: 66%;
+	right: 3%!important; /* move to 0% to show */
+	position: fixed;
+	transition: .5s;
+	background: none;
+	z-index: 10001;
+}
+.text-logIn {
+	width: 100px;
+	height: 50px;
+	justify-content: center;
+	margin: 50px 50px;
+	transition: .5s;
+	font-size: 30px;
+}
+.form-logIn {
+	width: 180px;
+	height: 130px;
+	margin: 10px 10px;
+	transition: .5s;
+	transform: translate(0, 150px);
+}
+.form-logIn input {
+	box-shadow: none;
+	text-shadow: none;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid var(--darkColor-light);
+	margin-top: 3px;
+	margin-bottom: 6px;
+	color: var(--darkColor-heavy);
+	background: none;
+  font-size: 20px;
+}
+.logIn-container-after button {
+	display: block;
+	width: 60px;
+	height: 28px;
+	margin-left: 80px;
+	margin-top: 8px;
+	outline: none;
+	background: none;
+	border: 2px solid var(--darkColor-light);
+	border-radius: 6px;
+	transition: .1s;
+	padding: 0;
+	color: var(--darkColor-light);
+}
+
+
+/* ===== button display ===== */
+.display-logIn-container {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	float: right;
+	background: var(--redColor);
+	border-radius: 10px;
+	top: 78%;
+	right: 1%;
+	padding: 5px;
+	z-index: 1001;
+}
+.display-logIn-container .fa-angle-double-left {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	background: none;
+	color: var(--whiteColor);
+	float: right;
+	display: flex;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+	z-index: 1001;
+}
+.rotate-left {
+	transform: rotate(0deg);
+}
+.rotate-right {
+	transform: rotate(180deg);
+}
+
+
+.logIn-container-after:hover > .text-logIn {
+	transform: translate(0, -135px);
+}
+.logIn-container-after:hover > .form-logIn {
+	transform: translate(0, -135px);
+}
+.logIn-container-after button:hover {
+	width: 70px;
+	height: 36px;
+	margin-top: 4px;
+	margin-left: 76px;
+	border: 2px solid var(--darkColor-heavy);
+	border-radius: 10px;
+}
+
+.display-logIn-nav {
+	cursor: pointer;
+}

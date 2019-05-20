@@ -1,0 +1,1 @@
+:root{--red-full:#df141e;--white:#fff;--transparent:transparent}.bg-red{background:var(--red-full)!important}.bg-red-header{background:linear-gradient(to top,var(--white) 0,var(--red-full) 60%)!important}.down-bg{display:block;z-index:0;width:100%;height:100px;background:linear-gradient(to top,var(--red-full) 25%,var(--transparent));margin-bottom:115px;left:0}

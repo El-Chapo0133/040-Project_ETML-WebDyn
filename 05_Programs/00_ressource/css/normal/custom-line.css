@@ -1,0 +1,6 @@
+.custom-line {
+    width: 100%;
+    height: 2px;
+    border-radius: none;
+    border: 1px solid black;
+}

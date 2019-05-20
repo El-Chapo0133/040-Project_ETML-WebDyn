@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+<button onclick="toggleContact()" class="contact-close display-contact-nav">
+    <i class="far fa-times-circle"></i>
+</button>
+
+<p>Tel : 0797302413</p>
+<p>ETML - Lausanne</p>
+
+<iframe class="contact-map" width="650" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Ecole%20des%20metiers&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" marginleft="24"></iframe>
